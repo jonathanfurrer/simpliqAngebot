@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #17211b; background: #f4f6f1; font-feature-settings: "tnum" 1; }
+button, input, select { font: inherit; }
+@layer components {
+  .card { @apply rounded-2xl border border-black/5 bg-white shadow-card; }
+  .label { @apply text-xs font-semibold uppercase tracking-[.12em] text-muted; }
+  .number-input { @apply w-24 rounded-lg border border-black/10 bg-paper px-3 py-2 text-right text-sm font-semibold outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/10; }
+}

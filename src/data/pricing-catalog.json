@@ -1,0 +1,23 @@
+{
+  "currency": "CHF",
+  "services": [
+    { "id": "managed_microsoft_tenant", "name": "Managed Microsoft Tenant", "category": "Identity & Access Management", "unit": "Tenant", "billingModel": "flat_per_unit", "vp": 175, "ep": 15.4, "setup": 450 },
+    { "id": "managed_entra_id", "name": "Managed Entra ID", "category": "Identity & Access Management", "unit": "Account", "billingModel": "volume_tier_total_quantity", "tiers": [{"from":0,"to":25,"vp":15,"ep":2.16},{"from":26,"to":100,"vp":10,"ep":2.16},{"from":101,"to":250,"vp":7.5,"ep":2.16},{"from":251,"to":null,"vp":6,"ep":2.16}], "setup": 250 },
+    { "id": "managed_m365_user", "name": "Managed Microsoft 365 User", "category": "Collaboration", "unit": "User", "billingModel": "volume_tier_total_quantity", "tiers": [{"from":0,"to":25,"vp":25,"ep":5.49},{"from":26,"to":100,"vp":15,"ep":5.49},{"from":101,"to":250,"vp":7.5,"ep":5.49},{"from":251,"to":null,"vp":6,"ep":5.49}], "setup": 250 },
+    { "id": "managed_entra_admin_access", "name": "Managed Entra ID Admin Access", "category": "Identity & Access Management", "unit": "Admin", "billingModel": "flat_per_unit", "vp": 45, "ep": 8, "setup": 150 },
+    { "id": "managed_windows_11_client", "name": "Managed Windows 11 Client", "category": "Endpoint", "unit": "Client", "billingModel": "volume_tier_total_quantity", "tiers": [{"from":0,"to":25,"vp":35,"ep":6.89},{"from":26,"to":100,"vp":25,"ep":6.89},{"from":101,"to":null,"vp":15,"ep":6.89}], "setup": 80 },
+    { "id": "managed_macos_client", "name": "Managed macOS Client", "category": "Endpoint", "unit": "Client", "billingModel": "volume_tier_total_quantity", "tiers": [{"from":0,"to":10,"vp":45,"ep":6.89},{"from":11,"to":25,"vp":35,"ep":6.89},{"from":26,"to":100,"vp":25,"ep":6.89},{"from":101,"to":null,"vp":15,"ep":6.89}], "setup": 90 },
+    { "id": "managed_windows_365_cloud_pc", "name": "Managed Windows 365 Cloud PC", "category": "Endpoint", "unit": "Cloud PC", "billingModel": "flat_per_unit", "vp": 39, "ep": 6.89, "setup": 120 },
+    { "id": "managed_azure_landing_zone", "name": "Managed Azure Landing Zone", "category": "Cloud Infrastructure", "unit": "Landing Zone", "billingModel": "flat_per_unit", "vp": 250, "ep": 30, "setup": 950 },
+    { "id": "managed_azure_vm", "name": "Managed Azure Virtual Machine", "category": "Cloud Infrastructure", "unit": "VM", "billingModel": "flat_per_unit", "vp": 45, "ep": 8, "setup": 120 },
+    { "id": "managed_avd_environment", "name": "Managed Azure Virtual Desktop Environment", "category": "Cloud Infrastructure", "unit": "Environment", "billingModel": "flat_per_unit", "vp": 250, "ep": 25, "setup": 750 },
+    { "id": "managed_avd_session_host", "name": "Managed AVD Session Host", "category": "Cloud Infrastructure", "unit": "Session Host", "billingModel": "flat_per_unit", "vp": 65, "ep": 10, "setup": 150 },
+    { "id": "managed_avd_concurrent_user", "name": "Managed AVD Concurrent User", "category": "Cloud Infrastructure", "unit": "Concurrent User", "billingModel": "flat_per_unit", "vp": 14, "ep": 3, "setup": 0 },
+    { "id": "managed_network_site", "name": "Managed Network Site", "category": "Network", "unit": "Site", "billingModel": "graduated_tier", "tiers": [{"from":1,"to":5,"vp":150,"ep":25},{"from":6,"to":null,"vp":50,"ep":12}], "setup": 300 },
+    { "id": "managed_vpn_tunnel", "name": "Managed VPN-Tunnel", "category": "Network", "unit": "Tunnel", "billingModel": "flat_per_unit", "vp": 25, "ep": 5, "setup": 80 },
+    { "id": "managed_guest_wifi", "name": "Managed Guest WiFi", "category": "Network", "unit": "Site", "billingModel": "flat_per_unit", "vp": 45, "ep": 8, "setup": 120 },
+    { "id": "managed_public_wifi", "name": "Managed Public WiFi", "category": "Network", "unit": "Site", "billingModel": "flat_per_unit", "vp": 95, "ep": 20, "setup": 180 },
+    { "id": "maintenance_budget_custom_app", "name": "Maintenance Budget Custom App", "category": "Custom Apps", "unit": "Stunde", "billingModel": "hours_per_app", "vp": 160, "ep": 85, "setup": 0 },
+    { "id": "budget_custom_monitoring", "name": "Budget Custom Monitoring", "category": "Network", "unit": "Monitoring Item", "billingModel": "flat_per_unit", "vp": 150, "ep": 25, "setup": 100 }
+  ]
+}
